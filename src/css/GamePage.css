@@ -1,0 +1,41 @@
+#back-arrow {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top:10px;
+    right: 10px;
+    padding:10px;
+    border-radius: 5px;
+    background-color: #111;
+    color:antiquewhite;
+}
+
+.description {
+    margin: 20px;
+}
+
+.game {
+    flex-direction: column;
+}
+
+.game-link {
+    display: block;
+    margin: auto;
+}
+
+.game-link iframe {
+    color:antiquewhite;
+}
+
+.widget-wrapper {
+    display:block;
+    width: 80vw;
+    
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 686px){
+    #back-arrow {
+        position: absolute;
+    }
+}

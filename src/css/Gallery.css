@@ -1,0 +1,92 @@
+.dropdown {
+    background: transparent;
+    color:antiquewhite;
+    border: 2px solid antiquewhite;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.dropdown option {
+    background-color: #101010;
+    border: 2px solid antiquewhite;
+}
+
+.filter {
+    margin-right: 10px;
+    
+}
+.gallery {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-title {
+    text-align: left;
+}
+.spacer {
+    flex:1;
+}
+
+.subheader {
+    width: 100%;
+    height:50px;
+    display: flex;
+}
+
+.viewer {
+    overflow-y: scroll;
+}
+.viewport-container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.viewport-container ul{
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    list-style-type: none;
+    margin-top: 5%;
+    text-align: center;
+    justify-content: center;
+}
+
+.viewport-container li{
+    display: inline-block;
+}
+
+
+@media only screen and (max-width: 989px)  and (min-width: 686px){
+    .viewport-container ul {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    
+
+
+    .viewport-container {
+        overflow-y: none;
+        height: auto;
+        width: 100%;
+        min-height: 70vh;
+    }
+    .viewport-container ul {
+        display: block;
+        width:100%;
+        grid-template-columns: 100%;
+    }
+
+    .viewport-container li {
+        width:100%;
+        height: 240px;
+        padding: 2% 0;
+        border-top: 3px dotted darkcyan;
+    }
+}

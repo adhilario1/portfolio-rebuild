@@ -1,0 +1,56 @@
+.game-list-item {
+    display: block;
+    width:fit-content;
+    height: fit-content;
+}
+
+.game-list-item:hover {
+    background-color: #ff8b00;
+}
+.games {
+    display: block;
+}
+
+.game-data {
+    text-align: center;
+}
+
+.game-list {
+    display: block;
+    margin: auto;
+    border-top: 1px dotted #444;
+    height: 60vh;
+    width:100%;
+    max-width: 1200px;
+    margin-top: 15px;
+    overflow-y: scroll;
+    float: left;
+}
+.game-thumbnail img{
+    width: 200px;
+    height: 200px;
+}
+
+.game-metadata {
+    display: none;
+}
+
+@media only screen and (min-width: 686px) {
+    .game {
+        min-width: 400px;
+        width: 75vw;
+        max-width: 1200px;
+    }
+
+    .game-thumbnail img{
+        width: 300px;
+        height: 300px;
+    }
+    .game-list-item {
+        height: 300px;
+    }
+
+    .game-metadata {
+        display: block;
+    }
+}
